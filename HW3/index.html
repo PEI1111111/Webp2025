@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>景點觀光展覽資訊</title>
+  <style>
+    th {
+      background-color: #00a36f;
+      color: white;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>景點觀光展覽資訊</h1>
+  <input type="text" id="searchInput" onchange="searchData()">
+
+  <table id="csie">
+    <tr>
+      <th>名稱</th>
+      <th>地點</th>
+      <th>票價</th>
+    </tr>
+  </table>
+
+  <button onclick="prevPage()">上一頁</button>
+  <span id="pageInfo"></span>
+  <button onclick="nextPage()">下一頁</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
